@@ -41,6 +41,10 @@ public class Postagem {
 	@ManyToOne // Muitas postagens para um tema
 	@JsonIgnoreProperties("postagem") // Evita o looping infinito, ignorando a própria classe
 	private Tema tema;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 
     public Long getId() {
         return this.id;
