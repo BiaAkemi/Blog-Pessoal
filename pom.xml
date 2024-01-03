@@ -42,7 +42,7 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- Dependência do Banco de dados H2 -->
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -60,11 +60,26 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 		<!--Dependência Sprinc Security-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
+		<!-- Dependência para Geração do Swagger -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<!-- Dependência do Banco de dados PostgreSQL -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
 		<!-- Dependências para Geração e Validação do Token JWT -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
